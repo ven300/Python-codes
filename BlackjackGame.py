@@ -1,9 +1,16 @@
-
+##Black Jack Game is basically about cards , cards include Queen ,King, and Joker all with a value of 10 and 
+## Diamonds,Hearts and Spades etc when you start the game two cards of User(Players) can be seen and the computer displays  
+## only one card and  other card is not displayed out of two cards and two options are provided firsty ADD  
+## a card and Show the cards (Stand) type Yes  You can add Cards as much you can but the value should be less than 22,
+#.If the total is 21 after you show the card you win the game 
+## and vice-versa.If the value of COMPUTER is more than USER and less than 22 the Computer(Dealer) wins the 
+## Game and Vice-versa.
 Start = input("Lets Play BlackJack Game Type,YES or NO ").lower()
 
 while Start == "yes":
         print("BLACK JACK GAME.")
-       
+        import os
+        from time import sleep
         import random
         Cards = [2,3,4,5,6,7,8,9,10,10,10,10,11,1]    # THESE ARE ALL THE CARD NUMBERS ,10 = QUEEN OR KING or JOKER OR "A" and 1 an be  "A" also.
         a = 0
@@ -174,7 +181,8 @@ while Start == "yes":
                         print("Blackjack, The user won the Game.")
                         print("The Dealer lose the Game.")
 
-
+        sleep(5)
+        os.syatem('cls')
         
         Start = input("Do you wanna  Play BlackJack Game Again ,Type YES or NO ").lower()
 
