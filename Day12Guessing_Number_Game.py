@@ -34,6 +34,6 @@ while Start == "yes":
       Game = Game
       if (i == 6 and Game == "hard")or (i == 11 and Game == "easy"):
           print("You Lose the Game")
-    sleep(5)
-    os.system('clear')
+    sleep(5) #Basically taken to clear the console in 5 seconds.
+    os.system('clear') #To clear the console.
     Start = input("Do you want to Start the game again,Type Yes or No ").lower()
