@@ -1,4 +1,5 @@
-
+# Guess number game is basically about Guess a number between 1 to 100 ,For easy Game you Get 10 chances to Guess the Correct number.
+#For Hard Game you get 5 chances to Guess the correct number.
 Start = "yes"
 while Start == "yes":
     import os
