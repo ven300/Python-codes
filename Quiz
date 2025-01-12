@@ -1,0 +1,25 @@
+from Question_Model import QuesAns
+from data import question_data
+
+
+points = 0
+for i in range(0,len(question_data)):
+    question = question_data[i]["question"]
+    answer = question_data[i]["answer"]
+    qa = QuesAns(question,answer)
+    ans = input(f"Q{i+1}.{qa.question}?(true or false) ").capitalize()
+    
+   
+    if ans not in qa.answer:
+        print("Its Wrong answer")
+        print(f"The current anwser is {question_data[i]["answer"]}")
+        print("\n")
+    elif ans == qa.answer:
+        score = points + 1
+        points = score
+        print("Its Correct answer")
+        print("\n")
+print("You have completed the Quiz")
+print(f"Your total scores is {points} out of 12.")                
+    
+   
